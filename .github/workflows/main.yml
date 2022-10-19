@@ -1,0 +1,23 @@
+# ------------
+# comment
+# ----------
+
+name: My-First-Github-Actions
+
+on: 
+  push:
+    branches:
+      - master
+      
+jobs:
+  job_one:
+    runs-on: ubuntu-latest
+    steps:
+    - name: print hello world
+      run: echo "Hello, World!"
+      
+  job_two:
+    runs-on: ubuntu-latest
+    steps:
+    - name: print goodbye world
+      run: echo "Goodbye World!"  
